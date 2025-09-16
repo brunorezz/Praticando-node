@@ -27,7 +27,7 @@ async function writeFile() {
   }
 }
 
-writeFile();
+// writeFile();
 
 async function appendToFile() {
   try {
@@ -38,4 +38,15 @@ async function appendToFile() {
   }
 }
 
-appendToFile();
+// appendToFile();
+
+async function readFile() {
+  try {
+    const content = await fs.readFile(filePath, 'utf-8');
+    console.log(content);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+readFile();
