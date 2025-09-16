@@ -1,2 +1,0 @@
-List of students.
-This is an appended Line.

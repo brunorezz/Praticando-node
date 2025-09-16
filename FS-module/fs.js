@@ -24,3 +24,6 @@ if (!fs.existsSync(folderPath)) {
 //! 4. Read the file content
 const content = fs.readFileSync(filePath, "utf-8");
 console.log(content);
+
+//! 5. Delete a file
+fs.unlinkSync(filePath);
