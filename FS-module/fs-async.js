@@ -42,11 +42,22 @@ async function appendToFile() {
 
 async function readFile() {
   try {
-    const content = await fs.readFile(filePath, 'utf-8');
+    const content = await fs.readFile(filePath, "utf-8");
     console.log(content);
   } catch (error) {
     console.log(error);
   }
 }
 
-readFile();
+// readFile();
+
+async function deleteFile() {
+  try {
+    const content = await fs.unlink(filePath);
+    console.log("File removed");
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+deleteFile();
