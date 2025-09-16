@@ -15,8 +15,12 @@ if (!fs.existsSync(folderPath)) {
 }
 
 //! 2. Create and write to a file
-fs.writeFileSync(filePath, "List of students.\n");
-console.log("File created and written");
+// fs.writeFileSync(filePath, "List of students.\n");
+// console.log("File created and written");
 
 //! 3. Append more content
-fs.appendFileSync(filePath, "This is an appended Line.\n");
+// fs.appendFileSync(filePath, "This is an appended Line.\n");
+
+//! 4. Read the file content
+const content = fs.readFileSync(filePath, "utf-8");
+console.log(content);
