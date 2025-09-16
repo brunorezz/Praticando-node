@@ -16,4 +16,15 @@ async function createFolder() {
   }
 }
 
-createFolder();
+// createFolder();
+
+async function writeFile() {
+  try {
+    await fs.writeFile(filePath, "This is for products lists");
+    console.log("File created");
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+writeFile();
