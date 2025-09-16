@@ -20,7 +20,7 @@ async function createFolder() {
 
 async function writeFile() {
   try {
-    await fs.writeFile(filePath, "This is for products lists");
+    await fs.writeFile(filePath, "This is for products lists.\n");
     console.log("File created");
   } catch (error) {
     console.log(error);
@@ -28,3 +28,14 @@ async function writeFile() {
 }
 
 writeFile();
+
+async function appendToFile() {
+  try {
+    await fs.appendFile(filePath, "Goods Sold.\n");
+    console.log("File created");
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+appendToFile();
