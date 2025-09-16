@@ -15,4 +15,8 @@ if (!fs.existsSync(folderPath)) {
 }
 
 //! 2. Create and write to a file
-fs.writeFileSync(filePath, "List of students");
+fs.writeFileSync(filePath, "List of students.\n");
+console.log("File created and written");
+
+//! 3. Append more content
+fs.appendFileSync(filePath, "This is an appended Line.\n");
