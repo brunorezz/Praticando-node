@@ -8,8 +8,8 @@ const server = http.createServer((req, res) => {
   res.end("hello world from Node.JS server");
 });
 
-const PORT = 5000
+const PORT = 5000;
 server.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-    console.log("Press Ctrl+C to stop de server");
-})
+  console.log(`Server running at http://localhost:${PORT}`);
+  console.log("Press Ctrl+C to stop de server");
+});
