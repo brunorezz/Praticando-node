@@ -10,7 +10,11 @@ app.post("/", (req, res) => {
 
 // Making post request
 app.post("/books", (req, res) => {
-  console.log(req.body);
+  res.json(
+    {
+        message: "Book added successfully",
+        data: req.body
+    })
 });
 
 //!Start the server
